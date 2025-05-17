@@ -44,7 +44,7 @@ Este assistente virtual usa a API do Google Calendar para agendar eventos. Para 
 
 3. Crie credenciais de tipo OAuth 2.0 Client ID e baixe o arquivo JSON das credenciais.
 
-4. Carregue o arquivo de credenciais no Colab ou ambiente de execução.
+4. Carregue o arquivo de credenciais no Colab no segredo
 
 ### Configuração do Colab
 
