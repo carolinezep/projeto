@@ -1,7 +1,4 @@
 
-markdown
-Copiar
-Editar
 # Assistente Virtual para Pais e Mães de Bebês
 
 Este projeto é um assistente virtual desenvolvido para fornecer apoio a pais e mães de bebês. Ele oferece informações sobre cuidados com bebês, agendamentos de vacinas e interação direta com um chat para tirar dúvidas ou desabafar.
