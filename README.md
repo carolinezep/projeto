@@ -1,5 +1,5 @@
 
-# Assistente Virtual para Pais e Mães de Bebês
+# Rede de Apoio Virtual para Pais e Mães de Bebês
 
 Este projeto é um assistente virtual desenvolvido para fornecer apoio a pais e mães de bebês. Ele oferece informações sobre cuidados com bebês, agendamentos de vacinas e interação direta com um chat para tirar dúvidas ou desabafar.
 
@@ -7,7 +7,7 @@ Este projeto é um assistente virtual desenvolvido para fornecer apoio a pais e 
 
 Como mãe de duas meninas, **sei que ter uma rede de apoio para tirar dúvidas torna a maternidade mais tranquila**. Com minha segunda filha, o conhecimento prévio sobre a maternidade **me deu mais tranquilidade e me permitiu aproveitar mais cada momento**.
 
-Este é uma **versão inicial do projeto**, e espero que ele seja útil para muitas famílias!
+Este é uma **versão inicial do projeto**, e espero que ele seja útil para muitas famílias!Ele será intregrado com Whatsapp para funcionar como um contato para conversar.
 
 ## Funcionalidades
 
@@ -65,7 +65,6 @@ Clone este repositório para o seu ambiente local ou para o Google Colab.
 ```bash
 
 git clone https://github.com/carolinezep/projeto.git
-cd assistente-virtual-bebe
 ```
 Executando o Assistente Virtual:
 Após a configuração, execute o script para iniciar o assistente virtual.
