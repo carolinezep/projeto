@@ -1,35 +1,57 @@
-# Assistente Virtual para Cuidados com Bebê e Agendamento de Vacinas
+Assistente Virtual para Pais e Mães de Bebê
+Este projeto é um assistente virtual desenvolvido para fornecer apoio a pais e mães de bebês. Ele oferece informações sobre cuidados com bebês, agendamentos de vacinas e interação direta com um chat para tirar dúvidas ou desabafar. Como mãe de duas meninas, sei que ter uma rede de apoio para tirar dúvidas torna a maternidade mais tranquila. Com minha segunda filha, o conhecimento prévio sobre a maternidade me deu mais tranquilidade e me permitiu aproveitar mais cada momento. Esta é uma versão inicial do projeto. 
 
-Este projeto é um assistente virtual desenvolvido para oferecer suporte a pais e responsáveis por bebês, fornecendo informações sobre cuidados com bebês, agendamentos de vacinas, e também oferecendo frases motivacionais. O assistente também permite agendar vacinas diretamente no Google Calendar e interagir com o usuário por meio de chat.
+Funcionalidades
+Informações sobre cuidados com bebês: Oferece orientações sobre sono, alimentação, brincadeiras,  vacinas e desenvolvimento do bebê com base na idade.
 
-## Funcionalidades
+Agendamento de vacinas: Permite ao usuário agendar vacinas recomendadas para o bebê diretamente no Google Calendar.
 
-- **Informações sobre cuidados com bebês**: Fornece dicas de cuidados com bebês com base na idade do bebê (sono, alimentação, brincadeiras, vacinas, etc.).
-- **Agendamento de vacinas**: Permite ao usuário agendar vacinas recomendadas para a idade do bebê no Google Calendar.
-- **Frases motivacionais**: O assistente oferece frases motivacionais para os pais ou responsáveis.
-- **Chat de apoio**: O assistente oferece um chat interativo onde os pais podem tirar dúvidas ou desabafar.
-- **Opções de ajuda**: O assistente oferece três opções de ajuda no início da interação:
-  1. Chamada de vídeo com especialista online.
-  2. Catálogos de Ebook.
-  3. Tirar dúvida e desabafar.
+Frases motivacionais: O assistente oferece frases motivacionais para os pais ou responsáveis. Arquivo frase_motivacionais.csv 
 
-## Pré-requisitos
+Chat de apoio: Permite que o usuário tire dúvidas ou desabafe diretamente com o assistente.
 
-Antes de rodar o código, certifique-se de que você tenha as seguintes bibliotecas instaladas:
+Opções de ajuda: O assistente oferece três opções no início da interação:
 
-- `google-auth`
-- `google-api-python-client`
-- `google-auth-httplib2`
-- `google-auth-oauthlib`
-- `pandas`
-- `google.colab`
+Chamada de vídeo com especialista online.
 
-Você pode instalar as bibliotecas necessárias com o seguinte comando:
+Catálogos de Ebook.
 
-```bash
-pip install --upgrade google-auth-oauthlib
-pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
+Tirar dúvida e desabafar (inicia uma interação de chat).
+
+Como configurar o ambiente
+Pré-requisitos
+Antes de rodar o código, é necessário instalar algumas bibliotecas. Execute os seguintes comandos:
+
+bash
+Copiar
+Editar
+pip install google-genai
+pip install --upgrade google-generativeai
+pip install google-auth-oauthlib
+pip install google-api-python-client google-auth-httplib2 google-auth-oauthlib
 pip install pandas
+Configuração do Google API
+Este assistente virtual usa a API do Google Calendar para agendar eventos. Para isso, é necessário configurar as credenciais do Google.
+
+Acesse o Google Cloud Console e crie um novo projeto.
+
+Habilite a API do Google Calendar.
+
+Crie credenciais de tipo OAuth 2.0 Client ID e baixe o arquivo JSON das credenciais.
+
+Carregue o arquivo de credenciais no Colab ou ambiente de execução.
+
+Configuração do Colab
+No Google Colab, execute o seguinte código para configurar as credenciais:
+
+python
+Copiar
+Editar
+from google.colab import userdata
+os.environ['GOOGLE_API_KEY_1'] = userdata.get('GOOGLE_API_KEY_1')
+os.environ['cliente_id'] = userdata.get('cliente_id')
+Este código configura a chave de API para a autenticação necessária para interagir com o Google Calendar e outros serviços do Google.
+
 Como usar
 Clone o repositório:
 Clone este repositório para o seu ambiente local ou para o Google Colab.
@@ -39,24 +61,24 @@ Copiar
 Editar
 git clone https://github.com/seu-usuario/assistente-virtual-bebe.git
 cd assistente-virtual-bebe
-Autenticação do Google Calendar:
-O código usa a API do Google Calendar para agendar eventos. Para usar, é necessário autenticar o acesso à sua conta do Google e fornecer um token de autenticação. O código irá guiá-lo durante o processo de autenticação automaticamente.
-
 Executando o Assistente Virtual:
-Após a configuração, execute o script para iniciar o assistente virtual:
+Após a configuração, execute o script para iniciar o assistente virtual.
 
 python
 Copiar
 Editar
 assistente_virtual()
-Interaja com o Assistente:
-O assistente irá oferecer opções de ajuda logo no início:
+Interação com o assistente:
+O assistente fornecerá três opções iniciais:
 
 1: Chamada de vídeo com especialista online.
 
 2: Catálogos de Ebook.
 
 3: Tirar dúvida e desabafar (inicia uma interação de chat).
+
+Agendamento de vacinas:
+Se o assistente detectar que há vacinas recomendadas para a idade do bebê, ele perguntará se o usuário deseja agendar no Google Calendar.
 
 Contribuindo
 Sinta-se à vontade para contribuir com melhorias no código! Para contribuir:
