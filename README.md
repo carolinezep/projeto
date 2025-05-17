@@ -75,11 +75,11 @@ assistente_virtual()
 ```
 ## Interação com o assistente:
 O assistente fornecerá três opções iniciais:
-1. Chamada de vídeo com especialista online.
-2. Catálogos de Ebook.
+1. Chamada de vídeo com especialista online. (link ainda não é real)
+2. Catálogos de Ebook. (link ainda não é real)
 3. Tirar dúvida e desabafar (inicia uma interação de chat).
 4. Agendamento de vacinas:
-Se o assistente detectar que há vacinas recomendadas para a idade do bebê, ele perguntará se o usuário deseja agendar no Google Calendar.
+Se o assistente detectar que há vacinas recomendadas para a idade do bebê, ele perguntará se o usuário deseja agendar no Google Calendar.(Em desenvolvimento)
 
 ## Contribuindo
 Sinta-se à vontade para contribuir com melhorias no código! Para contribuir:
