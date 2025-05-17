@@ -65,6 +65,7 @@ Clone este repositório para o seu ambiente local ou para o Google Colab.
 ```bash
 
 git clone https://github.com/carolinezep/projeto.git
+cd Projeto
 ```
 Executando o Assistente Virtual:
 Após a configuração, execute o script para iniciar o assistente virtual.
